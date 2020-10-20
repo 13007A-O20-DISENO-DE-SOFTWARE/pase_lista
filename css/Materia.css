@@ -168,20 +168,77 @@ label #Sidebarbtn:hover{
     color: #fff;
 }
 
-.Po-caja{
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0, 0.7);
-    position: absolute;
+.Contenedor-Popup{
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
     top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    visibility: hidden;
 }
 
-.Po-contenido{
-    width: 900px;
-    height: 600px;
-    background-color: #EEF2F5;
-    border-radius: 4px;
+.Contenedor-Popup.active{
+    visibility: visible;
+}
+
+.Popup{
+    background: rgb(189, 188, 188);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    transform: scale(0.7);
+    transition: .6s ease all;
+    opacity: 0;
+}
+
+.Popup.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.Popup .boton-cerrar{
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color:rgb(117, 115, 115);;
+    transition: 0.6s ease all;
+}
+
+.Popup .boton-cerrar:hover{
+    transition: 0.6s;
+    color: black;
+}
+
+.Popup form .Contenedor-Detalles input{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid #EEF2F5;
+}
+
+.Popup form .boton-agregar{
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: rgb(27, 177, 223);
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .6s ease all;
+}
+
+.Popup form .boton-agregar:hover{
+    background: rgb(25, 115, 199);
 }

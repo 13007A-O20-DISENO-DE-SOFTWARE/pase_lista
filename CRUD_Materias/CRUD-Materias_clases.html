@@ -38,16 +38,25 @@
 
     <div class="Contenedor-Materias">
         <div class="Header-Materias">
-            <h1>Materias Registradas</h1>  <button><i class="fas fa-plus"></i></button>
+            <h1>Materias Registradas</h1>  <button class="agregar" id="agregar"><i class="fas fa-plus"></i></button>
+        </div>
+
+        <div class="Contenedor-Popup" id="Contenedor-Popup">
+            <div class="Popup" id="Popup">
+                <a href="" id="boton-cerrar" class="boton-cerrar" ><i class="fas fa-times"></i></a>
+                <h3>Agrege Informacion</h3>
+                <form action="">
+                    <div class="Contenedor-Detalles">
+                        <input type="text" placeholder="Nombre de la Materia">
+                    </div>
+                    <input type="submit" class="boton-agregar" value="Agregar">
+                </form>
+            </div>
         </div>
 
     </div>
-    
-    <div class="Po-caja">
-        <div class="Po-contenido">
-            
-        </div>
-    </div>
 
+
+<script src="../Java/app.js"></script>
 </body>
 </html>
