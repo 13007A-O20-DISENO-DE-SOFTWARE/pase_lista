@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background: #787A7B;
+
+}
+
+header{
+    z-index: 1;
+    position: fixed;
+    background: #353535;
+    padding: 20px;
+    width: calc(100% - 0%);
+    top: 0;
+    height: 30px;
+}
+
+.IzqArea h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+
+.cerrar{
+    padding: 5px;
+    background: #77BDE7;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    
+}
+
+.cerrar:hover{
+    background: #6EABD1;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.Sidebar{
+    z-index: 1;
+    top: 0;
+    background: #353535;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 300px;
+    height: calc(100% - 9%);
+    transition: 0.5s;
+    transition-property: left;
+}
+
+.Sidebar .Foto_Perfil{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.Sidebar h3{
+    color: #EEF2F5;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.Sidebar a{
+    color: aliceblue;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 30px;
+    box-sizing: border-box;
+    transition: 0.6s;
+    transition-property: background;
+    
+}
+
+.Sidebar a:hover{
+    background: cadetblue;
+
+}
+
+.Sidebar i{
+    padding-right: 10px;
+}
+
+label #Sidebarbtn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 220px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #Sidebarbtn:hover{
+    color: cadetblue;
+}
+
+#check:checked ~ .Sidebar{
+    left: -240px;
+}
+
+#check:checked ~ .Sidebar a span{
+    display: none;
+}
+
+#check:checked ~ .Sidebar h3{
+    display: none;
+}
+
+#check:checked ~ .Sidebar a{
+    font-size: 20px;
+    margin-left: 230px;
+    margin-top: 30px;
+    width: 70px;
+}
+
+#check{
+    display: none;
+}
+
+.Contenedor-Materias{
+    position: relative;
+    top: 200px;
+    left: 400px;
+    background: black;
+    width: 70%;
+    height: 80%;
+    color: aliceblue;
+    transition: 0.6s;
+}
+
+.Contenedor-Materias h1{
+    padding-top: 30px;
+}
+
+.Header-Materias{
+    background: #5e5f5f;
+    padding-bottom: -30px;
+    height: 100px;
+}
+
+.Header-Materias button{
+    position: relative;
+    transform: scale(1.6);
+    left: 95%;
+    top: -55px;
+    padding: 10px;
+    background: #6EABD1;
+    border-radius: 50%;
+}
+
+.Header-Materias button i{
+    color: #fff;
+}
+
+.Po-caja{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Po-contenido{
+    width: 900px;
+    height: 600px;
+    background-color: #EEF2F5;
+    border-radius: 4px;
+}
