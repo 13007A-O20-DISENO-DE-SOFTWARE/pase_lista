@@ -190,11 +190,17 @@ label #Sidebarbtn:hover{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
     border-radius: 7px;
     padding: 20px;
-    text-align: center;
     width: 600px;
     transform: scale(0.7);
     transition: .6s ease all;
     opacity: 0;
+}
+
+.Popup h3{
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .Popup.active{
@@ -224,11 +230,15 @@ label #Sidebarbtn:hover{
     font-size: 15px;
     text-align: center;
     border: 1px solid #EEF2F5;
+    font-size: 20px;
+    border-radius: 8px;
 }
 
 .Popup form .boton-agregar{
     padding: 0 20px;
     height: 40px;
+    position: relative;
+    left: 40%;
     line-height: 40px;
     border: none;
     color: #fff;
@@ -241,4 +251,96 @@ label #Sidebarbtn:hover{
 
 .Popup form .boton-agregar:hover{
     background: rgb(25, 115, 199);
+}
+
+
+.Caja-Seleccion select{
+    width: 50%;
+    margin-bottom: 20px;
+    height: 50px;
+    padding: 0px 10px;
+    line-height: 60px;
+    font-size: 20px;
+    border: 1px solid #EEF2F5;
+    transition: .6s ease all;
+    border-radius: 4px;
+
+}
+
+.Caja-Seleccion select option{
+    padding: 50px;
+    transition: .6s ease all;
+}
+
+.Contenedor-Horarios h4{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.Caja-Seleccion{
+    position: relative;
+}
+
+.Numeros{
+position: relative;
+top: -100px;
+left: 320px;
+width: 50%;
+text-align: center;
+}
+
+.Numeros h4{
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.Numeros input{
+    width: 50%;
+    margin-bottom: 20px;
+    height: 40px;
+    line-height: 60px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid #EEF2F5;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.header-Listas{
+    display:flex ;
+    justify-content: space-between;
+    text-align: center;
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.ID{
+    padding-right: 15%;
+    border-right: 2px solid grey;
+    border-radius: 2px;
+}
+
+.Nombre-Materi{
+    padding-right: 1%;
+    border-right: 2px solid grey;
+    border-radius: 2px;
+}
+
+.horario{
+    padding-right: 10%;
+    border-right: 2px solid grey;
+    border-radius: 2px;
+}
+
+.Numero-Estudiantes{
+    padding-right: 5%;
+    border-right: 2px solid grey;
+    border-radius: 2px;
+}
+
+.Actiones{
+    padding-right: 20px;
 }

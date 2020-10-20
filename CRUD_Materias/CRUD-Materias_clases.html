@@ -45,15 +45,53 @@
             <div class="Popup" id="Popup">
                 <a href="" id="boton-cerrar" class="boton-cerrar" ><i class="fas fa-times"></i></a>
                 <h3>Agrege Informacion</h3>
-                <form action="">
+                <form>
                     <div class="Contenedor-Detalles">
                         <input type="text" placeholder="Nombre de la Materia">
                     </div>
+
+                <div class="Contenedor-Horarios">
+                    <h4>Seleccione Horario</h4>
+                    <div class="Caja-Seleccion">
+                        <select>
+                            <option value="7:00am">7:00am-9:00am</option>
+                            <option value="9:00am">9:00am-11:00am</option>
+                            <option value="11:00am">11:00am-1:00pm</option>
+                            <option value="1:00pm">1:00pm-3:00pm</option>
+                            <option value="3:00pm">3:00pm-5:00pm</option>
+                            <option value="5:00pm">5:00pm-7:00pm</option>
+                            <option value="7:00pm">7:00pm-9:00pm</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="Numeros">
+                    <label><h4>Numero de estudiantes</h4></label>
+                    <input type="number" min="1" max="25" value="0">
+                </div>
+
+
                     <input type="submit" class="boton-agregar" value="Agregar">
                 </form>
             </div>
         </div>
-
+        <div class="header-Listas">
+            <div class="ID">
+                #
+            </div>
+            <div class="Nombre-Materi">
+                Nombre de la Materia
+            </div>
+            <div class="horario">
+                Horario
+            </div>
+            <div class="Numero-Estudiantes">
+                Numero de estudiantes
+            </div>
+            <div class="Actiones">
+                Actiones
+            </div>
+        </div>
+        
     </div>
 
 

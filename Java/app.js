@@ -1,3 +1,4 @@
+/* Para el Popup*/
 var agregar = document.getElementById('agregar'),
     ConPop = document.getElementById('Contenedor-Popup'),
     Popup = document.getElementById('Popup'),
@@ -12,3 +13,6 @@ cerrar.addEventListener('click', function(){
     ConPop.classList.remove('active');
     Popup.classList.remove('active');
 });
+
+/*Mini Menu para seleccionar */
+
