@@ -1,0 +1,155 @@
+@import "compass/css3";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #389393;
+    font-size: 40px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #389393;
+    transition: all .5s ease;
+}
+.sidebar header{
+    font-size: 22px;
+    color: #389393;
+    text-align: center;
+    line-height: 70px;
+    background: #389393;
+    user-select: none;
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 18px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid white;
+    transition: .4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+label #abrir, label #cierre{
+    position: absolute;
+    cursor: pointer;
+    background: #389393;
+    border-radius: 3px;
+}
+label #abrir{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 4px 9px;
+}
+label #cierre{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: white;
+    padding: 4px 9px;
+    transition: all .5s;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #abrir{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cierre{
+    left: 195px;
+}
+#check:checked ~ section{
+    margin-left: 250px;
+}
+section{
+    background: url(FondoPrincipal.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+}
+
+.box{
+	height: 100vh;
+    transition: all .5s;
+}
+.box .content{
+    position: absolute;
+	width: calc(850px - 10px);
+	height: calc(460px - 10px);
+    background:  rgba(56,147,147,0.76);
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: -225px;
+    margin-left: -425px;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    transition: all .5s;
+}
+#check:checked ~ .box{
+    margin-left: 250px;
+}
+select{
+    position: relative;
+    top: 0;
+    left: 40%;
+    margin-top: -250px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -225px;
+    margin-left: -425px;
+}
+td, th {
+    border: 1px solid #372E2E;
+    padding: 10px 20px;
+}
+th{
+    text-align: center;
+    color: #372E2E;
+}
+  
+td {
+    text-align: left;
+    color: black;
+}
+  
+caption {
+    padding: 10px;
+}
