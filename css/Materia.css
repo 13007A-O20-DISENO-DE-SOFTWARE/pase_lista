@@ -139,7 +139,7 @@ label #Sidebarbtn:hover{
     left: 400px;
     background: black;
     width: 70%;
-    height: 80%;
+    height: 600px;
     color: aliceblue;
     transition: 0.6s;
 }
@@ -161,7 +161,9 @@ label #Sidebarbtn:hover{
     top: -55px;
     padding: 10px;
     background: #6EABD1;
+    border: 0px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .Header-Materias button i{
@@ -344,3 +346,62 @@ text-align: center;
 .Actiones{
     padding-right: 20px;
 }
+
+.Contenido-Listas{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.Materias{
+    position: relative;
+    left: 20px;
+}
+
+.Horario{
+    position: relative;
+    left: 20px;
+}
+
+.Grupos{
+    position: relative;
+    left: 60px;
+}
+
+.Cambiar{
+    position: relative;
+    left: 120px;
+}
+
+.Cambiar .modificar{
+    padding: 5px 15px;
+    background: rgb(111, 152, 190);
+    cursor: pointer;
+    border: 0px;
+    border-radius: 8px;
+    transition: .6s ease;
+}
+
+.Cambiar .modificar:hover{
+    transform: scale(1.1);
+}
+
+.Eliminar{
+    position: relative;
+    right: 5px;
+}
+
+.Eliminar .Borrar{
+    padding: 5px 15px;
+    background: rgb(206, 73, 73);
+    cursor: pointer;
+    border: 0px;
+    border-radius: 8px;
+    transition: .6s ease;
+}
+
+.Eliminar .Borrar:hover{
+    transform: scale(1.1);
+}
+
