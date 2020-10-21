@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Administracion alumnos</title>
-	<link rel="stylesheet" type="text/css" href="Estilo profesores_alumnos.css">
+	<link rel="stylesheet" type="text/css" href="Estilo_profesores_alumnos.css">
 </head>
 	<header>
 		<section class="wrapper">
@@ -22,6 +22,7 @@
 		</section>
 	</header>
 <body>
+	<script type="text/javascript" src="PA_Interactions.js"></script>
 	<section class="content">
 		<h1 align="center">Administración de alumnos</h1><br>
 		<script>
@@ -32,21 +33,80 @@
 				Meses[Fecha.getMonth()]+" de "+Fecha.getFullYear()+":");
 		</script>
 		<br><br>
+		<a class="boton">Ver más</a>
+		<a href="#FormAdd" class="boton">Agregar</a>
+		<a href="#FormUpdate" class="boton">Modificar</a>
+		<a class="boton" onclick="DeleteA()">Eliminar</a>
+		<div id="FormAdd" class="PopUpForm">
+			<div class="PopUpFormContent">
+				<br>
+				<h2 align="center">Agregar alumno</h2><br>
+				<form>
+					<ul>
+						<li>
+							<label for="Name">Nombre completo:</label><br>
+							<input type="text" id="Name" name="Nombre_Completo" size="50">
+						</li>
+						<li>
+							<label for="Mail">Correo electrónico:</label><br>
+							<input type="email" id="Mail" name="Correo_Profesor" size="50">
+						</li>
+						<li>
+							<label for="StudySubjects">Materias cursadas:</label><br>
+							<input type="text" id="StudySubjects" name="Materias_cursadas" size="50">
+						</li>
+					</ul>
+				</form>
+				<br><a href="#" name="Add" class="boton">Agregar</a>
+				<a href="#" class="boton">Cancelar</a>
+			</div>
+		</div>
+		<div id="FormUpdate" class="PopUpForm">
+			<div class="PopUpFormContent">
+				<br>
+				<h2 align="center">Modificar alumno</h2><br>
+				<form>
+					<ul>
+						<li>
+							<label for="ID">ID:</label><br>
+							<input type="text" id="ID" name="ID_Alumno" maxlength="6" size="50">
+						</li>
+						<li>
+							<label for="Name">Nombre completo:</label><br>
+							<input type="text" id="Name" name="Nombre_Completo" size="50">
+						</li>
+						<li>
+							<label for="Mail">Correo electrónico:</label><br>
+							<input type="email" id="Mail" name="Correo_Profesor" size="50">
+						</li>
+						<li>
+							<label for="StudySubjects">Materias cursadas:</label><br>
+							<input type="text" id="StudySubjects" name="Materias_cursadas" size="50">
+						</li>
+					</ul>
+				</form>
+				<br><a href="#" name="Add" class="boton">Actualizar</a>
+				<a href="#" class="boton">Cancelar</a>
+			</div>
+		</div>
+		<br><br>
 		<table border="1">
 			<tr>
 				<th>ID</th>
 				<th>Nombre completo</th>
 				<th>E-mail</th>
-				<th>Opciones</th>
+				<th>Materias cursadas</th>
 			</tr>
 			<tr>
 				<td>000001</td>
 				<td>Barbara Alameda Sánchez</td>
 				<td>B4m3z_231@gmail.com</td>
 				<td>
-					<input type="button" value="Ver más">
-					<input type="button" value="Modificar">
-					<input type="button" value="Eliminar">
+					<ul>
+						<li>Cálculo</li>
+						<li>Dinámica</li>
+						<li>Programación</li>
+					</ul>
 				</td>
 			</tr>
 			<tr>
@@ -54,9 +114,11 @@
 				<td>Nombre ApellidoP ApellidoM</td>
 				<td>correoelectronico@ejemplo.com</td>
 				<td>
-					<input type="button" value="Ver más">
-					<input type="button" value="Modificar">
-					<input type="button" value="Eliminar">
+					<ul>
+						<li>Materia 1</li>
+						<li>Materia 2</li>
+						<li>Materia 3</li>
+					</ul>
 				</td>
 			</tr>
 			<tr>
@@ -64,9 +126,11 @@
 				<td>Nombre ApellidoP ApellidoM</td>
 				<td>correoelectronico@ejemplo.com</td>
 				<td>
-					<input type="button" value="Ver más">
-					<input type="button" value="Modificar">
-					<input type="button" value="Eliminar">
+					<ul>
+						<li>Materia 1</li>
+						<li>Materia 2</li>
+						<li>Materia 3</li>
+					</ul>
 				</td>
 			</tr>
 			<tr>
@@ -74,9 +138,11 @@
 				<td>Nombre ApellidoP ApellidoM</td>
 				<td>correoelectronico@ejemplo.com</td>
 				<td>
-					<input type="button" value="Ver más">
-					<input type="button" value="Modificar">
-					<input type="button" value="Eliminar">
+					<ul>
+						<li>Materia 1</li>
+						<li>Materia 2</li>
+						<li>Materia 3</li>
+					</ul>
 				</td>
 			</tr>
 			<tr>
@@ -84,9 +150,11 @@
 				<td>Nombre ApellidoP ApellidoM</td>
 				<td>correoelectronico@ejemplo.com</td>
 				<td>
-					<input type="button" value="Ver más">
-					<input type="button" value="Modificar">
-					<input type="button" value="Eliminar">
+					<ul>
+						<li>Materia 1</li>
+						<li>Materia 2</li>
+						<li>Materia 3</li>
+					</ul>
 				</td>
 			</tr>
 			<tr>
@@ -94,12 +162,17 @@
 				<td>Nombre ApellidoP ApellidoM</td>
 				<td>correoelectronico@ejemplo.com</td>
 				<td>
-					<input type="button" value="Ver más">
-					<input type="button" value="Modificar">
-					<input type="button" value="Eliminar">
+					<ul>
+						<li>Materia 1</li>
+						<li>Materia 2</li>
+						<li>Materia 3</li>
+					</ul>
 				</td>
 			</tr>
 		</table>
 	</section>
+	<footer>
+		&copy;2020 Diseño de software<br>
+	</footer>
 </body>
 </html>

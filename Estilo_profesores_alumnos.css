@@ -6,11 +6,55 @@ body{
 	font-family: Roboto;
 	background: #7FA8FF;
 }
+.boton{
+	text-decoration: none;
+	margin: 10px;
+	padding: 5px;
+	font-size: 15px;
+	color: black;
+	background: #BB71FF;
+	border-radius: 5px;
+	border: 2px solid #540E99;
+}
+.boton:hover{
+	background: #8742CB;
+	color: white;
+}
+.PopUpFormContent{
+	background: #7FA8FF;
+	width: 400px;
+	height: 300px;
+	padding: 30px 30px;
+	margin: 10% auto;
+	position: relative;
+}
+.PopUpForm{
+	background: rgba(0,0,0,0.9);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 1.5s;
+}
+#FormAdd:target{
+	opacity: 1;
+	pointer-events: auto;
+}
+#FormUpdate:target{
+	opacity: 1;
+	pointer-events: auto;
+}
 header{
 	background: #001EFF;
 	width: 100%
 	position: fixed;
 	z-index: 100;
+}
+ul{
+	list-style-type: none;
 }
 nav{
 	float: left;
@@ -26,6 +70,10 @@ nav ul li{
 h1{
 	font-size: 30px;
 	text-transform: uppercase;
+}
+h2{
+	font-size: 25px;
+	text-transform: capitalize;
 }
 p{
 	font-size: 20px;
