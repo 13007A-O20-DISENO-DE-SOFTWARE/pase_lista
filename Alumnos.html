@@ -6,31 +6,28 @@
 	<link rel="stylesheet" type="text/css" href="Estilo_profesores_alumnos.css">
 </head>
 	<header>
-		<section class="wrapper">
-			<nav>
-				<ul>
-					<li><a href="#">Log in</a></li>
-					<li><a href="#">Register</a></li>
-					<li><a href="Profesores.html">Profesores</a></li>
-					<li><a href="#">Alumnos</a></li>
-					<li><a href="#">Materias</a></li>
-					<li><a href="#">Clases</a></li>
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Registro de asistencias</a></li>
-				</ul>
-			</nav>	
-		</section>
+		<h1>Web App Pase de lista</h1>
 	</header>
 <body>
+	<div id="NavBar">
+		<a href="#">Log in</a>
+		<a href="#">Register</a>
+		<a href="Profesores.html">Profesores</a>
+		<a class="active" href="#">Alumnos</a>
+		<a href="#">Materias</a>
+		<a href="#">Clases</a>
+		<a href="#">Inicio</a>
+		<a href="#">Registro de asistencias</a>
+	</div>
 	<script type="text/javascript" src="PA_Interactions.js"></script>
 	<section class="content">
-		<h1 align="center">Administración de alumnos</h1><br>
+		<h2 align="center">Administración de alumnos</h2><br>
 		<script>
 			var Meses=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre",
 			"Noviembre","Diciembre");
 			var Fecha=new Date();
 			document.write("Aquí puede ver la lista de alumnos actualizada el "+Fecha.getDate()+" de "+
-				Meses[Fecha.getMonth()]+" de "+Fecha.getFullYear()+":");
+				Meses[Fecha.getMonth()]+" de "+Fecha.getFullYear()+" y sus opciones:");
 		</script>
 		<br><br>
 		<a class="boton">Ver más</a>
@@ -40,7 +37,7 @@
 		<div id="FormAdd" class="PopUpForm">
 			<div class="PopUpFormContent">
 				<br>
-				<h2 align="center">Agregar alumno</h2><br>
+				<h3 align="center">Agregar alumno</h3><br>
 				<form>
 					<ul>
 						<li>
@@ -49,7 +46,7 @@
 						</li>
 						<li>
 							<label for="Mail">Correo electrónico:</label><br>
-							<input type="email" id="Mail" name="Correo_Profesor" size="50">
+							<input type="email" id="Mail" name="Correo" size="50">
 						</li>
 						<li>
 							<label for="StudySubjects">Materias cursadas:</label><br>
@@ -57,19 +54,19 @@
 						</li>
 					</ul>
 				</form>
-				<br><a href="#" name="Add" class="boton">Agregar</a>
+				<br><a name="Add" class="boton" onclick="ValidacionAddA()">Agregar</a>
 				<a href="#" class="boton">Cancelar</a>
 			</div>
 		</div>
 		<div id="FormUpdate" class="PopUpForm">
 			<div class="PopUpFormContent">
 				<br>
-				<h2 align="center">Modificar alumno</h2><br>
+				<h3 align="center">Modificar alumno</h3><br>
 				<form>
 					<ul>
 						<li>
 							<label for="ID">ID:</label><br>
-							<input type="text" id="ID" name="ID_Alumno" maxlength="6" size="50">
+							<input type="text" id="ID" name="ID" maxlength="6" size="50">
 						</li>
 						<li>
 							<label for="Name">Nombre completo:</label><br>
@@ -77,7 +74,7 @@
 						</li>
 						<li>
 							<label for="Mail">Correo electrónico:</label><br>
-							<input type="email" id="Mail" name="Correo_Profesor" size="50">
+							<input type="email" id="Mail" name="Correo" size="50">
 						</li>
 						<li>
 							<label for="StudySubjects">Materias cursadas:</label><br>
@@ -85,7 +82,7 @@
 						</li>
 					</ul>
 				</form>
-				<br><a href="#" name="Add" class="boton">Actualizar</a>
+				<br><a name="Add" class="boton" onclick="ValidacionUpA()">Actualizar</a>
 				<a href="#" class="boton">Cancelar</a>
 			</div>
 		</div>
